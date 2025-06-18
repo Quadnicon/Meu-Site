@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de E-books</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        .menu {
+            background-color: #333;
+            color: white;
+            width: 200px;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        .menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            width: calc(100% - 220px);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="#">Início</a>
+        <a href="#">E-books</a>
+        <a href="#">Contato</a>
+        <a href="#">Sobre</a>
+    </div>
+
+    <div class="content">
+        <h1>Bem-vindo à nossa loja de e-books!</h1>
+        <p>Escolha um e-book e comece sua jornada de leitura.</p>
+
+        <div class="grid">
+            <div class="product">
+                <img src="..//meu site/imagens/o homem.jpg" alt="E-book 1">
+                <p>O homem mais rico da babilônia - R$ 19,90</p>
+            </div>
+            <div class="product">
+                <img src="..//meu site/imagens/fodeu geral.png" alt="E-book 2">
+                <p>F*deu geral: Um livro sobre esperança? - R$ 24,90</p>
+            </div>
+            <div class="product">
+                <img src="..//meu site/imagens/a sutil arte.jpg" alt="E-book 3">
+                <p>A Sutil Arte de Ligar o F*da-Se: Uma estratégia inusitada para uma vida melhor  - R$ 29,90</p>
+            </div>
+            <div class="product">
+                <img src="..//meu site/imagens/eu sempre.jpg" alt="E-book 4">
+                <p>Eu Sempre Morro - R$ 34,90</p>
+            </div>
+            <div class="product">
+                <img src="..//meu site/imagens/o diaq que perdi.jpg" alt="E-book 5">
+                <p>o dia em que perdi a minha voz - R$ 39,90</p>
+            </div>
+            <div class="product">
+                <img src="..//meu site/imagens/desculpe o exa.jpg" alt="E-book 6">
+                <p>Desculpe o exagero, mas não sei sentir pouco - R$ 44,90</p>
+            </div>
+            <div class="product">
+                <img src="..//meu site/imagens/poesias.jpg" alt="E-book 7">
+                <p>Poesias que escrevi enquanto aprendia a viver - R$ 49,90</p>
+            </div>
+            <div class="product">
+                <img src="..//meu site/imagens/e eu.jpg" alt="E-book 8">
+                <p>E eu, não sou intelectual?: Um quase manual de sobrevivência acadêmica - R$ 54,90</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
